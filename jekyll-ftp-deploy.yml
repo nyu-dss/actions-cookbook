@@ -1,10 +1,11 @@
-name: jekyll build, test, and ftp deploy
+# build, test, and ftp deploy a jekyll site
+name: ci:deploy
 on:
   push:
     branches:
       - main
 jobs:
-  main:
+  deploy:
     runs-on: ubuntu-latest
     env:
       BASEURL: ''
